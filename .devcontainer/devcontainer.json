@@ -1,0 +1,25 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "updateContentCommand": "npm install; pip install -r requirements.txt",
+  "postStartCommand": "npm install; pip install -r requirements.txt",
+  "customizations": {
+    "codespaces": {
+      "disableAutomaticConfiguration": true,
+      "openFiles": [
+        "README.md"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.prompty"
+      ],
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor"
+        }
+      }
+    }
+  }
+}
